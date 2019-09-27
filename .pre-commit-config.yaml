@@ -1,0 +1,12 @@
+- repo: https://github.com/psf/black
+  rev: master
+  hooks:
+    - id: black
+      args: ["--line-length", "79"]
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: master
+  hooks:
+    - id: flake8
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+    - id: check-yaml
