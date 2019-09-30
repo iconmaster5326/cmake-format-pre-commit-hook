@@ -1,7 +1,8 @@
-- id: cmake-format
-  name: cmake-format
-  description: Formats CMake files.
-  entry: cmake_format_pre_commit_hook --in-place
-  language: python
-  types: [file, text]
-  files: '^(CMake.*|.*\.cmake.*)$'
+-   id: cmake-format
+    name: cmake-format
+    entry: cmake-format
+    language: python
+    'files': ^(CMake.*|.*\.cmake.*)$
+    args: ["-i"]
+    require_serial: false
+    additional_dependencies: []
