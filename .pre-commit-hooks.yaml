@@ -3,7 +3,7 @@
     description: Formats CMake list files.
     entry: cmake-format
     language: python
-    'files': ^(CMakeLists.*|.*\.cmake.*)$
+    'files': ^(CMakeLists.*|.*\.cmake|.*\.cmake.in)$
     args: ["-i"]
     require_serial: false
     additional_dependencies: []
