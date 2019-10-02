@@ -3,7 +3,7 @@ A [pre-commit](https://pypi.org/project/pre-commit/) hook for [cmake-format](htt
 
 # Usage
 
-By default, this hook runs on files beginning with `CMake` and files ending with `.cmake` (all case sensitive).
+By default, this hook runs on files beginning with `CMakeLists` and files ending with `.cmake` (all case sensitive).
 It uses the default configurations, unless you have a `.cmake-format{.py,.yaml,.json}` file, as is usual with `cmake-format`.
 You can also specift formatting optinos with `args:` in your `.pre-commit-config.yaml`.
 
